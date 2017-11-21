@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.numericsystool.flycat.numericsys.menuMetodos_Fragment">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_menuMetodos"
+        android:paddingTop="10dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/colorDivider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:cacheColorHint="@color/colorAccent">
+    </ListView>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Numeric Sys Calculator</string>
+    <string name="title_menu_metodos">Metodos</string>
+    <string name="title_calculadora">Calcular</string>
+    <string name="title_teoria">Teoría</string>
+
+    <!-- Titulos para el bar -->
+    <string name="title_bar_menu_metodos">Elige un Método</string>
+    <string name="title_bar_calculadora">Calcular Método</string>
+    <string name="title_bar_teoria">Teoría del Método</string>
+
+</resources>

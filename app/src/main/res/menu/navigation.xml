@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_metodos"
+        android:icon="@drawable/ic_action_metodos"
+        android:title="@string/title_menu_metodos" />
+
+    <item
+        android:id="@+id/navigation_calculadora"
+        android:icon="@drawable/ic_action_calculator"
+        android:title="@string/title_calculadora" />
+
+    <item
+        android:id="@+id/navigation_teoria"
+        android:icon="@drawable/ic_action_teoria"
+        android:title="@string/title_teoria" />
+
+</menu>
