@@ -24,11 +24,14 @@ public class ListViewAdapter extends ArrayAdapter<NumericalMethod> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
         View v = convertView;
+
         if(v == null){
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v = inflater.inflate(R.layout.list_item,null);
         }
+
         NumericalMethod method = getItem(position);
         ImageView img = (ImageView) v.findViewById(R.id.iv_ItemIcon);
         TextView tvTitle = (TextView) v.findViewById(R.id.tv_Title);

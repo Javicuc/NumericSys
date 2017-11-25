@@ -4,6 +4,7 @@ package com.numericsystool.flycat.numericsys;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.internal.BottomNavigationItemView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
@@ -78,6 +79,8 @@ public class menuMetodos_Fragment extends Fragment {
 
             Toast.makeText(getActivity(),listMethods.get(position).getTitle(), Toast.LENGTH_SHORT).show();
 
+            android.support.design.widget.BottomNavigationView navigationView = (android.support.design.widget.BottomNavigationView)getActivity().findViewById(R.id.navigation);
+            navigationView.setSelectedItemId(R.id.navigation_calculadora);
             getActivity().setTitle(R.string.title_bar_calculadora);
             FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.content_frame_switch, new calculadora_Fragment(), "fragmentCalculadora").commit();
