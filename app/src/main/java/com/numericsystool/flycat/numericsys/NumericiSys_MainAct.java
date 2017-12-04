@@ -45,11 +45,12 @@ public class NumericiSys_MainAct extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+
         setTitle(R.string.title_bar_menu_metodos);
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.content_frame_switch, new menuMetodos_Fragment(), "FragmentMenu");
         fragmentTransaction.commit();
 
-    }
 
+    }
 }

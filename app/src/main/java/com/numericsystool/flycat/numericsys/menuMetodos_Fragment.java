@@ -58,16 +58,18 @@ public class menuMetodos_Fragment extends Fragment {
     public List<NumericalMethod> getMethodsList() {
         listMethods = new ArrayList<>();
 
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 1", "Descripción Método 1"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 2", "Descripción Método 2"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 3", "Descripción Método 3"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 4", "Descripción Método 4"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 5", "Descripción Método 5"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 6", "Descripción Método 6"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 7", "Descripción Método 7"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 8", "Descripción Método 8"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 9", "Descripción Método 9"));
-        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Metodo 10", "Descripción Método 10"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Bisección", getString(R.string.descBiseccion)));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Regla Falsa", getString(R.string.descReglaFalsa)));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Punto Fijo", "Descripción Método 3"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Newton Raphson", "Descripción Método 4"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Jacobi", "Descripción Método 5"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Lagrange", "Descripción Método 6"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Trapecio", "Descripción Método 7"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Simpson 1/3", "Descripción Método 8"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Simpson 3/8", "Descripción Método 9"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Cuadratura de Gauss", "Descripción Método 10"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Euler", "Descripción Método 11"));
+        listMethods.add(new NumericalMethod(R.mipmap.ic_launcher,"Runge Kutta", "Descripción Método 12"));
 
         return listMethods;
 
@@ -77,13 +79,21 @@ public class menuMetodos_Fragment extends Fragment {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-            Toast.makeText(getActivity(),listMethods.get(position).getTitle(), Toast.LENGTH_SHORT).show();
+            String metodoName = listMethods.get(position).getTitle();
 
             android.support.design.widget.BottomNavigationView navigationView = (android.support.design.widget.BottomNavigationView)getActivity().findViewById(R.id.navigation);
             navigationView.setSelectedItemId(R.id.navigation_calculadora);
             getActivity().setTitle(R.string.title_bar_calculadora);
+
+            Bundle data = new Bundle();
+            data.putInt("metodoPos", position);
+            data.putString("metodoName",metodoName);
+
             FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.content_frame_switch, new calculadora_Fragment(), "fragmentCalculadora").commit();
+            calculadora_Fragment calculadora = new calculadora_Fragment();
+            calculadora.setArguments(data);
+            transaction.replace(R.id.content_frame_switch, calculadora, "fragmentCalculadora").commit();
+
         }
     };
 }

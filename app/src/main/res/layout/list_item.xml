@@ -7,6 +7,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
         />
     <TextView
         android:id="@+id/tv_Title"
@@ -16,10 +17,11 @@
         android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_toRightOf="@+id/iv_ItemIcon"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="3dp"
         android:layout_marginLeft="10dp"
         />
-    <TextView
+
+    <com.numericsystool.flycat.numericsys.tools.JustifyTextView
         android:id="@+id/tv_Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +30,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_alignLeft="@+id/tv_Title"
         android:layout_below="@+id/tv_Title"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="3dp"
         />
+
 </RelativeLayout>

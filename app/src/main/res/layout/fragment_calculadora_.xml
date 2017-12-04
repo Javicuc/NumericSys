@@ -4,10 +4,149 @@
     android:layout_height="match_parent"
     tools:context="com.numericsystool.flycat.numericsys.calculadora_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/title_calculadora" />
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_TitleMetodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:id="@+id/tv_inputString1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+         />
+    <EditText
+        android:id="@+id/et_inputString1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_inputString2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/et_inputString2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_inputDouble1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/et_inputDouble1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_inputDouble2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/et_inputDouble2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_inputDouble3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/et_inputDouble3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_inputDouble4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/et_inputDouble4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_inputInt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/et_inputInt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/bt_Resolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resolver" />
+
+</LinearLayout>
+    </ScrollView>
 </FrameLayout>

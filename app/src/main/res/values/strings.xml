@@ -9,4 +9,12 @@
     <string name="title_bar_calculadora">Calcular Método</string>
     <string name="title_bar_teoria">Teoría del Método</string>
 
+    <!-- Descripción de métodos numericos -->
+    <string name="descBiseccion">El método de Bisección consiste en ir acercando sistemáticamente
+        los extremos del intervalo hasta que se obtiene un intervalo de anchura suficientemente
+        pequeña en el que se localiza un cero.</string>
+    <string name="descReglaFalsa">La regla falsa consiste en unir f(a) y f(b) con una linea recta,
+        la intersección de esta linea con el eje de las x representa una mejor aproximación de la
+        raiz, que el dividir el intervalo [a,b] a la mitad.</string>
+
 </resources>
