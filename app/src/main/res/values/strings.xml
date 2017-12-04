@@ -17,4 +17,7 @@
         la intersección de esta linea con el eje de las x representa una mejor aproximación de la
         raiz, que el dividir el intervalo [a,b] a la mitad.</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

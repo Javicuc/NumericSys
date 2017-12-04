@@ -54,7 +54,8 @@ public class calculadora_Fragment extends Fragment {
 
 
     public calculadora_Fragment() {
-        // Required empty public constructor
+        metodoPos = -1;
+        metodoName = "Numeric Sys Calculadora";
     }
 
     @Override
@@ -577,7 +578,6 @@ public class calculadora_Fragment extends Fragment {
                 tvInputDouble1.setVisibility(View.GONE);
                 tvInputDouble2.setVisibility(View.GONE);
                 tvInputDouble4.setVisibility(View.GONE);
-                tvTitleMetodo.setVisibility(View.GONE);
 
                 etInputInt1.setVisibility(View.GONE);
                 etInputString1.setVisibility(View.GONE);
@@ -586,6 +586,7 @@ public class calculadora_Fragment extends Fragment {
                 etInputDouble2.setVisibility(View.GONE);
                 etInputDouble3.setVisibility(View.GONE);
                 etInputDouble4.setVisibility(View.GONE);
+                btResolver.setVisibility(View.GONE);
                 break;
         }
         return view;

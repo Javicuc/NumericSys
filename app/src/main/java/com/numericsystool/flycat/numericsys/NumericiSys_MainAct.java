@@ -10,8 +10,15 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.karan.churi.PermissionManager.PermissionManager;
+
+import java.util.ArrayList;
 
 public class NumericiSys_MainAct extends AppCompatActivity {
+
+    PermissionManager permissionManager;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -51,6 +58,7 @@ public class NumericiSys_MainAct extends AppCompatActivity {
         fragmentTransaction.replace(R.id.content_frame_switch, new menuMetodos_Fragment(), "FragmentMenu");
         fragmentTransaction.commit();
 
+        permissionManager = new PermissionManager() {};
 
     }
 }

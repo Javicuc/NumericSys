@@ -4,10 +4,16 @@
     android:layout_height="match_parent"
     tools:context="com.numericsystool.flycat.numericsys.teoria_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/title_teoria" />
+        android:id="@+id/lv_menuMetodosTeoria"
+        android:paddingTop="10dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/colorDivider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:cacheColorHint="@color/colorAccent">
+    </ListView>
 
 </FrameLayout>
