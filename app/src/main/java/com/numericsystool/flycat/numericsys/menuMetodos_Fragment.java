@@ -60,16 +60,16 @@ public class menuMetodos_Fragment extends Fragment {
 
         listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Bisección", getString(R.string.descBiseccion)));
         listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Regla Falsa", getString(R.string.descReglaFalsa)));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Punto Fijo", "Descripción Método 3"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Newton Raphson", "Descripción Método 4"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Jacobi", "Descripción Método 5"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Lagrange", "Descripción Método 6"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Trapecio", "Descripción Método 7"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Simpson 1/3", "Descripción Método 8"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Simpson 3/8", "Descripción Método 9"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Cuadratura de Gauss", "Descripción Método 10"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Euler", "Descripción Método 11"));
-        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Runge Kutta", "Descripción Método 12"));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Punto Fijo", getString(R.string.descPuntoFijo)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Newton Raphson", getString(R.string.descNewtonRaphson)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Jacobi", getString(R.string.descGaussJacobi)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Lagrange", getString(R.string.descLagrange)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Trapecio", getString(R.string.descTrapecio)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Simpson 1/3", getString(R.string.descSimpson)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Simpson 3/8", getString(R.string.descSimpson)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Cuadratura de Gauss", getString(R.string.descCuadraturaGauss)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Euler", getString(R.string.descEuler)));
+        listMethods.add(new NumericalMethod(R.drawable.ic_action_calculator,"Runge Kutta", getString(R.string.descRungeKutta)));
 
         return listMethods;
 

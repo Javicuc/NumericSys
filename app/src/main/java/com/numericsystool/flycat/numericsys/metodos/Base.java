@@ -413,4 +413,9 @@ public class Base {
         }
         return n;
     }
+    public double[] obtenerArray(String arrayformat){
+        double[] array = new double[0];
+
+        return array;
+    }
 }

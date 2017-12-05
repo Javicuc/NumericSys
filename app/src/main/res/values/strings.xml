@@ -16,8 +16,51 @@
     <string name="descReglaFalsa">La regla falsa consiste en unir f(a) y f(b) con una linea recta,
         la intersección de esta linea con el eje de las x representa una mejor aproximación de la
         raiz, que el dividir el intervalo [a,b] a la mitad.</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="descPuntoFijo">
+        En particular se puede utilizar para determinar raíces de una función de la forma f(x),
+        siempre y cuando se cumplan los criterios de convergencia.
+    </string>
+    <string name="descNewtonRaphson">
+        Es un algoritmo para encontrar aproximaciones de los ceros o raíces de una función real.
+        También puede ser usado para encontrar el máximo o mínimo de una función, encontrando
+        los ceros de su primera derivada.
+    </string>
+    <string name="descCuadraturaGauss">
+        Es una aproximación de una integral definida de una función. Una cuadratura de Gauss n,
+        es una cuadratura que selecciona los puntos de la evaluación de manera óptima y no en una
+        forma igualmente espaciada, construida para dar el resultado de un polinomio de
+        grado 2n-1 o menos.
+    </string>
+    <string name="descGaussJacobi">
+        Es un método iterativo, usado para resolver sistemas de ecuaciones lineales del
+        tipo Ax = b. El algoritmo toma su nombre del matemático alemán Carl Gustav Jakob Jacobi.
+        El método de Jacobi consiste en usar fórmulas como iteración de punto fijo.
+    </string>
+    <string name="descLagrange">
+        Es un procedimiento para encontrar los máximos y mínimos de funciones de múltiples
+        variables sujetas a restricciones. Este método reduce el problema restringido con n
+        variables a uno sin restricciones de n + k variables, donde k es igual al número de
+        restricciones, y cuyas ecuaciones pueden ser resueltas más fácilmente.
+    </string>
+    <string name="descEuler">
+        En matemática y computación, el método de Euler, llamado así en honor a Leonhard Euler,
+        es un procedimiento de integración numérica para resolver ecuaciones diferenciales
+        ordinarias (EDO) a partir de un valor inicial dado.
+    </string>
+    <string name="descRungeKutta">
+        Los métodos de Runge-Kutta (RK) son un conjunto de métodos iterativos
+        (implícitos y explícitos) para la aproximación de soluciones de ecuaciones diferenciales
+        ordinarias, concretamente, del problema de valor inicial.
+    </string>
+    <string name="descTrapecio">
+        Es un método de integración, es decir, un método para calcular aproximadamente el valor de
+        una integral definida. La regla se basa en aproximar el valor de la integral de f(x) por el
+        de la función lineal, que pasa a través de los puntos (a,f(a)) y (b,f(b)). La integral
+        de ésta es igual al área del trapecio bajo la gráfica de la función lineal.
+    </string>
+    <string name="descSimpson">
+        En análisis numérico, la regla o método de Simpson (nombrada así en honor de Thomas Simpson)
+        y a veces llamada regla de Kepler es un método de integración numérica que se utiliza
+        para obtener la aproximación de la integral:
+    </string>
 </resources>
