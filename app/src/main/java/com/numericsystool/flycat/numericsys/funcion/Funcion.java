@@ -65,8 +65,6 @@ public class Funcion {
         Calculable calc = this.parser.withVariable("x", x).withVariable("y", y).build();
         resultado = calc.calculate();
 
-
-
         return resultado;
     }
 
@@ -74,8 +72,6 @@ public class Funcion {
         double resultado = 0;
         Calculable calc = this.parser.withVariable("x", valor).build();
         resultado = calc.calculate();
-
-
 
         return resultado;
     }

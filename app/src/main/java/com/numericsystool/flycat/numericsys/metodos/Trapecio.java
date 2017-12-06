@@ -34,5 +34,4 @@ public class Trapecio extends Base{
 
         return result;
     }
-
 }

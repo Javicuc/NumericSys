@@ -43,5 +43,4 @@ public class Simpson1_3 extends Base {
         return result;
 
     }
-
 }
